@@ -4,6 +4,7 @@ describe ".create_table" do
   it 'creates the students table in the database' do
     Student.create_table
     table_check_sql = "SELECT tb1_name FROM sqlite_master WHERE type='table' AND tbl_name='students';"
+  end
 
   let(:josh) {Student.new("Josh", "9th")}
 
